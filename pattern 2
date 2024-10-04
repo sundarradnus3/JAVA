@@ -1,0 +1,115 @@
+public class Main{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        for(int i = 1; i<n;i++){
+            for( int j =1; j<=i; j++){
+                System.out.print("* ");
+            } 
+             System.out.println("");  
+        }
+    } 
+}       
+       
+       
+output
+5
+* 
+* * 
+* * * 
+* * * *
+------------------------------------------------------------------------------
+public class Main{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        for(int i = n; i>=1;i--){
+            for( int j =1; j<=i; j++){
+                System.out.print("* ");
+            } 
+             System.out.println("");  
+        }
+    } 
+}   
+5
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+-----------------------------------------------------
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        for(int i = 1; i<=n;i++){
+            for( int j =1; j<=n-i; j++){
+                System.out.print(" ");
+            } 
+            for(int k=1;k<=i;k++){
+                System.out.print("* ");
+            }
+             System.out.println("");  
+        }
+    } 
+}       
+       
+5
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * * 
+-------------------------------------------------------------------------
+
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        for(int i =1 ; i<=n;i++){
+            for( int j =1; j<=n-i; j++){
+                System.out.print("  "); * NOTE* //space=1 time right triangle , sapce =2 time straignt triangle,space=3 time, left triangle//
+            } 
+            for(int k=1;k<=i;k++){
+                System.out.print("* ");
+            }
+             System.out.println("");  
+        }
+    } 
+}       
+   OUTPUT    
+   5
+        *
+      * *
+    * * *
+  * * * *
+* * * * *   
+----------------------------------------------------------------------
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        for(int i = n ; i>=1;i--){
+            for( int j =1; j<=n-i; j++){
+                System.out.print("  ");//INVERSE TRIANGLE(TR)(SPACE=1 RIGHT TR ,SPACE=2 STRAIGHT TR,SPACE=3LEFT TR )
+            } 
+            for(int k=1;k<=i;k++){
+                System.out.print("* ");
+            }
+             System.out.println("");  
+        }
+    } 
+}
+OUTPUT
+5
+* * * * *
+  * * * *
+    * * *
+      * *
+        *
